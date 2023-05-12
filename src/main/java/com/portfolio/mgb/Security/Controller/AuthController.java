@@ -35,6 +35,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/auth")
+//@CrossOrigin(origins = "http://localhost:4200") --> Para permitir el acceso de cualquier puerto
+//@CrossOrigin(origins = "**")
+//Ver si tengo que cambiarlo
 @CrossOrigin
 public class AuthController {
     @Autowired

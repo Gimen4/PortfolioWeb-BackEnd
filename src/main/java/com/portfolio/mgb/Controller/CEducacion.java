@@ -25,7 +25,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200") --> Para permitir el acceso de cualquier puerto
+@CrossOrigin(origins = "**")
 public class CEducacion {
     @Autowired
     SEducacion sEducacion;
